@@ -6,17 +6,17 @@ This page provides an index of the evidence I captured for the Equipment Fault M
 
 | ID | Evidence | Demonstrates | Related documentation |
 |---|---|---|---|
-| E01 | [SharePoint Equipment](images/01-sharepoint-equipment-data.png) | Equipment records, locations, equipment types, criticality and active status | [02 Solution Overview](02-solution-overview.md) |
-| E02 | [SharePoint Faults](images/02-sharepoint-faults.png) | Fault records and processed priority/status data | [02 Solution Overview](02-solution-overview.md) |
-| E03 | [Application Home](images/03-home.png) | Application entry point, navigation and fault summary | [03 Power Apps](03-power-apps.md) |
-| E04 | [Fault Report](images/04-report-fault.png) | Fault submission form and business inputs | [03 Power Apps](03-power-apps.md) |
-| E06 | [Faults List](images/06-faults-list.png) | Fault list, search, filtering, sorting and priority visibility | [03 Power Apps](03-power-apps.md) |
-| E07 | [Fault Detail](images/07-fault-detail.png) | Fault details, priority/RAG indicator, assigned team, status and resolution fields | [03 Power Apps](03-power-apps.md) |
-| E09 | [Power Automate Flow Overview](images/09-flow-overview.png) | Overall automation structure from trigger through processing and notifications | [04 Power Automate](04-power-automate.md) |
-| E10 | [Assignment and Priority Logic](images/10-assignment-priority-logic.png) | Implemented equipment-type assignment rules and priority decision logic | [04 Power Automate](04-power-automate.md) |
-| E11 | [Successful Flow Run](images/11-successful-flow-run.png) | Successful end-to-end execution of the automation | [04 Power Automate](04-power-automate.md) |
-| E12 | [Teams Notification](images/12-teams-notification.png) | Automated Teams notification containing processed fault information | [04 Power Automate](04-power-automate.md) |
-| E13 | [Outlook Notification](images/13-outlook-notification.png) | Automated email notification containing processed fault information | [04 Power Automate](04-power-automate.md) |
+| E01 | [SharePoint Equipment](Images/01-sharepoint-equipment-data.png) | Equipment records, locations, equipment types, criticality and active status | [02 Solution Overview](02-solution-overview.md) |
+| E02 | [SharePoint Faults](Images/02-sharepoint-faults.png) | Fault records and processed priority/status data | [02 Solution Overview](02-solution-overview.md) |
+| E03 | [Application Home](Images/03-home.png) | Application entry point, navigation and fault summary | [03 Power Apps](03-power-apps.md) |
+| E04 | [Fault Report](Images/04-report-fault.png) | Fault submission form and business inputs | [03 Power Apps](03-power-apps.md) |
+| E06 | [Faults List](Images/06-faults-list.png) | Fault list, search, filtering, sorting and priority visibility | [03 Power Apps](03-power-apps.md) |
+| E07 | [Fault Detail](Images/07-fault-detail.png) | Fault details, priority/RAG indicator, assigned team, status and resolution fields | [03 Power Apps](03-power-apps.md) |
+| E09 | [Power Automate Flow Overview](Images/09-flow-overview.png) | Overall automation structure from trigger through processing and notifications | [04 Power Automate](04-power-automate.md) |
+| E10 | [Assignment and Priority Logic](Images/10-assignment-priority-logic.png) | Implemented equipment-type assignment rules and priority decision logic | [04 Power Automate](04-power-automate.md) |
+| E11 | [Successful Flow Run](Images/11-successful-flow-run.png) | Successful end-to-end execution of the automation | [04 Power Automate](04-power-automate.md) |
+| E12 | [Teams Notification](Images/12-teams-notification.png) | Automated Teams notification containing processed fault information | [04 Power Automate](04-power-automate.md) |
+| E13 | [Outlook Notification](Images/13-outlook-notification.png) | Automated email notification containing processed fault information | [04 Power Automate](04-power-automate.md) |
 
 ## Evidence not captured as standalone screenshots
 

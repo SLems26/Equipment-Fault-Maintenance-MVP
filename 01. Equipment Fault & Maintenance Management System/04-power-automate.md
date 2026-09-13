@@ -24,7 +24,7 @@ Power Automate
 
 This means the automation begins from the creation of the fault record rather than relying on a user to manually start the process.
 
-![Power Automate flow overview](images/09-flow-overview.png)
+![Power Automate flow overview](Images/09-flow-overview.png)
 
 *Evidence E09 — overall flow structure from trigger through processing and notifications.*
 
@@ -64,7 +64,7 @@ The rules are:
 
 The logic therefore gives the highest priority to faults that combine critical equipment with an outage.
 
-![Assignment and priority logic](images/10-assignment-priority-logic.png)
+![Assignment and priority logic](Images/10-assignment-priority-logic.png)
 
 *Evidence E10 — implemented assignment and priority decision logic.*
 
@@ -92,7 +92,7 @@ Update Fault Record
 
 This keeps the calculated information with the fault record so that it can be displayed and managed through Power Apps.
 
-![Successful flow run](images/11-successful-flow-run.png)
+![Successful flow run](Images/11-successful-flow-run.png)
 
 *Evidence E11 — successful end-to-end execution of the automation.*
 
@@ -114,13 +114,13 @@ New Fault --> Flow -+
 
 The Teams notification is sent to the **Fault Alerts** channel within the **Equipment Maintenance** team.
 
-![Teams notification](images/12-teams-notification.png)
+![Teams notification](Images/12-teams-notification.png)
 
 *Evidence E12 — automated Teams notification containing the processed fault information.*
 
 I also added an Outlook email notification for the relevant recipients.
 
-![Outlook notification](images/13-outlook-notification.png)
+![Outlook notification](Images/13-outlook-notification.png)
 
 *Evidence E13 — automated email notification containing the processed fault information.*
 

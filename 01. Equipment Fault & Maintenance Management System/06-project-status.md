@@ -29,7 +29,7 @@ The core process has been implemented from fault reporting through to automated 
 - Added the P1/P2/P3 visual priority indicator
 - Added data refresh to prevent stale fault information being displayed
 
-**Evidence:** [E03 — Home](images/03-home.png) · [E04 — Fault report](images/04-report-fault.png) · [E06 — Faults list](images/06-faults-list.png) · [E07 — Fault detail](images/07-fault-detail.png)
+**Evidence:** [E03 — Home](Images/03-home.png) · [E04 — Fault report](Images/04-report-fault.png) · [E06 — Faults list](Images/06-faults-list.png) · [E07 — Fault detail](Images/07-fault-detail.png)
 
 ### Power Automate
 
@@ -41,7 +41,7 @@ The core process has been implemented from fault reporting through to automated 
 - Added Microsoft Teams notifications
 - Added Outlook email notifications
 
-**Evidence:** [E09 — Flow overview](images/09-flow-overview.png) · [E10 — Assignment & priority logic](images/10-assignment-priority-logic.png) · [E11 — Successful flow run](images/11-successful-flow-run.png) · [E12 — Teams notification](images/12-teams-notification.png) · [E13 — Outlook notification](images/13-outlook-notification.png)
+**Evidence:** [E09 — Flow overview](Images/09-flow-overview.png) · [E10 — Assignment & priority logic](Images/10-assignment-priority-logic.png) · [E11 — Successful flow run](Images/11-successful-flow-run.png) · [E12 — Teams notification](Images/12-teams-notification.png) · [E13 — Outlook notification](Images/13-outlook-notification.png)
 
 ## Tested and resolved
 
@@ -51,7 +51,7 @@ I also identified and resolved the stale-data issue in Power Apps.
 
 The underlying SharePoint record was being updated correctly, but the Power Apps Faults screen could continue displaying previous data until the data source was refreshed.
 
-**Evidence:** [E11 — Successful flow run](images/11-successful-flow-run.png)
+**Evidence:** [E11 — Successful flow run](Images/11-successful-flow-run.png)
 
 ## Remaining work
 
@@ -59,7 +59,7 @@ Before I consider the MVP complete, I need to:
 
 1. Investigate the intermittent issue where a new fault can sometimes display an ID as its Title
    
-   **Evidence:** [E06 — Faults list](images/06-faults-list.png)
+   **Evidence:** [E06 — Faults list](Images/06-faults-list.png)
 2. Complete the remaining minor UI refinements
 
 ## Scope

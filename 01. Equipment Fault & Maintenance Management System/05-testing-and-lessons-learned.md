@@ -31,7 +31,7 @@ Review and manage fault in Power Apps
 
 I used this process to check that the different components worked together rather than testing each component in isolation.
 
-**Evidence:** [E11 — Successful flow run](images/11-successful-flow-run.png)
+**Evidence:** [E11 — Successful flow run](Images/11-successful-flow-run.png)
 
 ## Power Apps testing
 
@@ -53,7 +53,7 @@ I tested the main functions of the Power Apps interface, including:
 
 I also checked the priority indicator on the fault detail screen.
 
-**Evidence:** [E04 — Fault submission](images/04-report-fault.png) · [E06 — Faults list](images/06-faults-list.png) · [E07 — Fault detail](images/07-fault-detail.png)
+**Evidence:** [E04 — Fault submission](Images/04-report-fault.png) · [E06 — Faults list](Images/06-faults-list.png) · [E07 — Fault detail](Images/07-fault-detail.png)
 
 ## Power Automate testing
 
@@ -67,7 +67,7 @@ I checked that:
 - A Teams notification was generated
 - An Outlook email notification was generated
 
-**Evidence:** [E10 — Assignment & priority logic](images/10-assignment-priority-logic.png) · [E11 — Successful flow run](images/11-successful-flow-run.png) · [E12 — Teams notification](images/12-teams-notification.png) · [E13 — Outlook notification](images/13-outlook-notification.png)
+**Evidence:** [E10 — Assignment & priority logic](Images/10-assignment-priority-logic.png) · [E11 — Successful flow run](Images/11-successful-flow-run.png) · [E12 — Teams notification](Images/12-teams-notification.png) · [E13 — Outlook notification](Images/13-outlook-notification.png)
 
 ## Issues found during testing
 
@@ -102,7 +102,7 @@ The final mapping is:
 
 I kept the priority text visible as well, so the meaning is not dependent on colour alone.
 
-**Evidence:** [E07 — Fault detail](images/07-fault-detail.png)
+**Evidence:** [E07 — Fault detail](Images/07-fault-detail.png)
 
 ### Fault title issue
 
@@ -110,7 +110,7 @@ During testing, I identified an intermittent issue where a newly submitted fault
 
 This remains an item for investigation before I consider the end-to-end testing complete.
 
-**Evidence:** [E06 — Faults list](images/06-faults-list.png)
+**Evidence:** [E06 — Faults list](Images/06-faults-list.png)
 
 ## What I learned
 

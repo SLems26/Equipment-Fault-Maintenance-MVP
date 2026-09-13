@@ -45,7 +45,7 @@ The form captures:
 
 The Equipment selection is dependent on the selected Location.
 
-![Report a Fault](images/04-report-fault.png)
+![Report a Fault](Images/04-report-fault.png)
 
 *Evidence E04 — fault reporting form with the business inputs populated.*
 
@@ -77,7 +77,7 @@ The screen supports:
 
 The search and filtering are performed against the SharePoint data source.
 
-![Faults list](images/06-faults-list.png)
+![Faults list](Images/06-faults-list.png)
 
 *Evidence E06 — fault list with search, filtering, sorting and processed fault information.*
 
@@ -95,13 +95,13 @@ The screen supports:
 
 When a fault is marked as **Resolved**, resolution notes are required before the update can be saved.
 
-![Fault detail](images/07-fault-detail.png)
+![Fault detail](Images/07-fault-detail.png)
 
 *Evidence E07 — fault detail, priority, assigned team, status and resolution fields.*
 
 ## Application Navigation
 
-![Home screen](images/03-home.png)
+![Home screen](Images/03-home.png)
 
 *Evidence E03 — application home screen, navigation and fault summary.*
 
