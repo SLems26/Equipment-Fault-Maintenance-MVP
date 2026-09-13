@@ -33,6 +33,8 @@ Katie correctly identified the Location and Equipment, proposed the relevant Fau
 
 This established the basic reporting journey.
 
+[Evidence 5](Images/05-katie-fault-reporting.png.png)
+
 ### Missing Information
 
 I then tested a report where required information was missing:
@@ -54,6 +56,8 @@ I deliberately provided an incorrect relationship:
 Katie did not accept the combination. She explained that the Main Freezer was associated with Croydon Central and asked the employee to clarify.
 
 **Result: Passed**
+
+[Evidence 6](Images/06-katie-clarification-and-validation.png.png)
 
 This was important because accepting a valid piece of equipment with an incorrect location could create an inaccurate Fault record.
 
@@ -93,6 +97,8 @@ I tested that Katie:
 
 These tests gave me confidence that the conversational layer had a clear boundary before official record creation.
 
+[Evidence 7](Images/07-katie-confirmation.png.png)
+
 ## Maintenance Support Tests
 
 I also tested the other side of Katie's role: helping employees understand the existing maintenance process without unnecessarily starting a fault report.
@@ -109,11 +115,15 @@ The scenarios included:
 
 Katie correctly used the available maintenance knowledge and remained within its defined scope.
 
+[Evidence 12](Images/12-katie-maintenance-support.png.png)
+
 Where the knowledge did not define an answer, such as a formal definition of **Outage**, Katie did not invent one.
 
 **Result: Passed**
 
 I also tested situations where an employee described an equipment problem but was asking for help rather than trying to submit a fault. Katie remained in maintenance-support mode rather than automatically beginning the reporting process.
+
+[Evidence 13](Images/13-katie-support-reporting-boundary.png)
 
 ## Testing Natural-Language Interpretation
 

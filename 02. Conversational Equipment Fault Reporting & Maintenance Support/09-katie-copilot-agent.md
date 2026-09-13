@@ -8,6 +8,8 @@ The objective was to make equipment fault reporting more natural without moving 
 
 Katie understands what an employee tells her, collects the information needed for a fault report, asks for clarification where necessary, and requires explicit confirmation before a fault can be submitted.
 
+[Evidence 1](Images/01-katie-agent.png)
+
 ## Designing the Conversation
 
 I wanted employees to be able to start with the problem rather than with a form field.
@@ -30,6 +32,8 @@ The information does not have to be provided in a particular order, and employee
 
 This was an important part of the design because a conversational interface should not simply turn a form into a series of rigid questions.
 
+[Evidence 2 screenshot](Images/02-katie-agent-instructions.png) · [Evidence 2 instructions](Images/02-katie-agent-instructions.md)
+
 ## Fault Reporting Configuration
 
 I kept the information Katie uses for fault reporting separate from the general maintenance knowledge.
@@ -45,6 +49,8 @@ The fault-reporting configuration contains:
 This gives Katie a defined set of values to use when collecting and checking the information provided by the employee, rather than relying on general knowledge or assumptions.
 
 For the current MVP, this configuration is maintained separately from the existing SharePoint data rather than being retrieved dynamically at runtime.
+
+[Evidence 3 configuration](Images/03-katie-fault-reporting-configuration.md.md) · [Evidence 3 knowledge-source view](Images/03-katie-knowledge-sources.png.md)
 
 ## Clarification Rather Than Guessing
 
@@ -115,6 +121,8 @@ For example, an employee can ask how priority is determined, which team handles 
 Katie uses the available maintenance knowledge for these questions.
 
 If the knowledge does not define an answer, she is instructed to say that the information is not currently defined rather than inventing one.
+
+[Evidence 4 maintenance knowledge](Images/04-katie-maintenance-knowledge.md.md)
 
 This gives Katie a second useful capability without turning her into a general-purpose maintenance adviser.
 
@@ -191,6 +199,8 @@ This was a useful reminder that conversational flexibility still needs clear bou
 ## Current Implementation and Evidence
 
 The core conversational behaviour has been configured and tested.
+
+The agent configuration and knowledge-source setup are evidenced by [Evidence 1](Images/01-katie-agent.png), [Evidence 2](Images/02-katie-agent-instructions.png), [Evidence 3 configuration](Images/03-katie-fault-reporting-configuration.md.md) and [Evidence 4 maintenance knowledge](Images/04-katie-maintenance-knowledge.md.md).
 
 The current MVP demonstrates:
 

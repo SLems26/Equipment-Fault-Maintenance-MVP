@@ -61,6 +61,8 @@ The employee first receives a complete proposed report containing:
 
 Only after the employee explicitly confirms the report does Katie call the submission flow.
 
+[Evidence 7](Images/07-katie-confirmation.png.png)
+
 This confirmation step creates a clear boundary between **conversation** and **official record creation**.
 
 The values passed to the submission process are the confirmed business values:
@@ -72,6 +74,8 @@ Fault category
 Description
 Operational impact
 ```
+
+[Evidence 9](Images/09-katie-submit-fault-inputs.png.png)
 
 Priority, criticality and assigned team are not collected from the employee or passed as part of the conversational submission.
 
@@ -94,6 +98,8 @@ Create Fault item
         ↓
 Respond to the agent
 ```
+
+[Evidence 8](Images/08-katie-submit-fault-flow.png.png)
 
 The SharePoint lookups resolve the relevant Location and Equipment records needed to create the relationships in the Fault record.
 
@@ -195,6 +201,8 @@ The happy-path test demonstrated that:
 - The flow successfully created a Fault record in SharePoint.
 
 The evidence therefore confirms the **Katie → Agent Flow → SharePoint Fault creation** path.
+
+[Evidence 10](Images/10-katie-submission-and-agent-flow.png.png) · [Evidence 11](Images/11-sharepoint-fault-created.png.png)
 
 The downstream maintenance process is treated as a separate outcome and is not used as evidence for successful Fault creation.
 

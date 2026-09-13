@@ -59,7 +59,7 @@ Katie does not simply accept incomplete or ambiguous information. Where
 information is missing or unclear, she asks the employee to clarify.
 
 Once all five fields have been collected, Katie presents the complete
-proposed report and asks the employee to confirm it.
+proposed report and asks the employee to confirm it. [Evidence 07](Images/07-katie-confirmation.png.png)
 
 Only after explicit confirmation does the submission process begin.
 
@@ -141,19 +141,22 @@ For the current MVP, I configured Katie with a separate fault-reporting
 knowledge source containing the available locations, equipment,
 location/equipment relationships and valid fault-reporting values.
 
+[Evidence 03 — Katie fault-reporting configuration](Images/03-katie-fault-reporting-configuration.md.md) and
+[Evidence 03 — Katie knowledge-source view](Images/03-katie-knowledge-sources.png.md)
+
 I kept this configuration separate from the maintenance knowledge so
 that the information Katie uses for fault reporting is distinct from the
 information she uses to explain the existing maintenance process.
 
 The current MVP has been tested for:
 
--   Complete fault reporting.
+-   Complete fault reporting. [Evidence 05](Images/05-katie-fault-reporting.png.png)
 -   Missing information.
--   Invalid equipment/location combinations.
+-   Invalid equipment/location combinations. [Evidence 06](Images/06-katie-clarification-and-validation.png.png)
 -   Unknown equipment.
--   Changes made after confirmation.
--   Maintenance-support questions.
--   The boundary between maintenance support and fault reporting.
+-   Changes made after confirmation. [Evidence 07](Images/07-katie-confirmation.png.png)
+-   Maintenance-support questions. [Evidence 12](Images/12-katie-maintenance-support.png.png)
+-   The boundary between maintenance support and fault reporting. [Evidence 13](Images/13-katie-support-reporting-boundary.png)
 
 The confirmed fault is submitted through a native Copilot Studio Agent
 Flow, which creates the Fault record in the existing SharePoint system.
