@@ -1,6 +1,6 @@
 # Equipment Fault & Maintenance Management
 
-I built this self-directed project around a fictional multi-site food-service organisation using Microsoft Power Apps, SharePoint, Power Automate, Microsoft Teams and Outlook.
+I built this self-directed project as an Equipment Fault & Maintenance Management System for a fictional multi-site food-service organisation, using Microsoft Power Apps, SharePoint, Power Automate, Microsoft Teams and Outlook.
 
 The original solution provides structured equipment fault reporting and a workflow for processing new faults. I later extended it with **Katie**, a conversational interface for equipment fault reporting and maintenance support.
 
@@ -45,7 +45,7 @@ The solution is structured around:
            └───────────┘   └───────────┘
 ```
 
-I used three SharePoint lists:
+The MVP uses three core SharePoint lists:
 
 ```text
 Locations
@@ -204,7 +204,5 @@ Katie is part of the project's AI & Automation development.
 ## About the Project
 
 I built this as a self-directed project using a fictional multi-site food-service organisation and synthetic data.
-
-The wider project is based on approximately 25 restaurants, while the MVP is deliberately limited to 3 restaurants.
 
 Through the project, I have developed practical experience of taking a business process, designing a solution and building it across Microsoft technologies. I then extended the solution with a conversational interface, keeping the existing data model, business rules and maintenance process in place.
