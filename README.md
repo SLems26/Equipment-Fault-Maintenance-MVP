@@ -1,208 +1,147 @@
-# Equipment Fault & Maintenance Management
+# Equipment Fault & Maintenance Management MVP
 
-I built this self-directed project as an Equipment Fault & Maintenance Management System for a fictional multi-site food-service organisation, using Microsoft Power Apps, SharePoint, Power Automate, Microsoft Teams and Outlook.
+## Project Overview
 
-The original solution provides structured equipment fault reporting and a workflow for processing new faults. I later extended it with **Katie**, a conversational interface for equipment fault reporting and maintenance support.
+This is a self-directed Technical Business Analyst portfolio project based on a fictional multi-site food-service organisation and synthetic data.
 
-Katie extends the existing solution rather than replacing it. The original Power Apps reporting route remains available.
+The project explores the design and implementation of an equipment fault and maintenance management process using Microsoft Power Platform and Microsoft 365.
 
-## Why I built it
+I started with a structured equipment fault and maintenance solution and later extended it with **Katie**, a Copilot Studio agent that provides a conversational route for reporting faults and accessing maintenance information.
 
-Equipment faults can be reported through different channels. This can lead to inconsistent information, unclear ownership, manual follow-up and limited visibility of maintenance activity.
+## Business Problem
 
-I wanted to build a small working solution that gives staff a consistent way to report faults and gives maintenance users a clearer way to manage them.
+In a multi-site food-service environment, equipment faults need to be reported consistently so that the right information is available for maintenance processing.
 
-I then explored how a conversational interface could sit alongside the existing solution, allowing employees to describe a fault naturally while keeping the existing data model, automation and maintenance rules in place.
+A useful reporting process needs to capture:
 
-## What I built
+- Location
+- Equipment
+- Fault category
+- Description
+- Operational impact
 
-The original system uses Power Apps for reporting, SharePoint for the underlying data, and Power Automate to process new faults, apply the existing assignment and priority rules, and send notifications through Microsoft Teams and Outlook.
+The project therefore focuses on creating a structured fault-reporting process and connecting reported faults to a defined maintenance workflow.
 
-The solution is structured around:
+## Solution
 
-```text
-                 ┌───────────────┐
-                 │   Power Apps  │
-                 └───────┬───────┘
-                         │
-                         v
-                 ┌───────────────┐
-                 │   SharePoint  │
-                 └───────┬───────┘
-                         │
-                    new fault
-                         │
-                         v
-                 ┌───────────────┐
-                 │ Power Automate │
-                 └───────┬───────┘
-                         │
-                  ┌──────┴──────┐
-                  v             v
-           ┌───────────┐   ┌───────────┐
-           │   Teams   │   │  Outlook  │
-           │notification│  │   email   │
-           └───────────┘   └───────────┘
-```
+The original solution uses:
 
-The MVP uses three core SharePoint lists:
+- **Microsoft Power Apps** for structured fault reporting and fault management
+- **SharePoint** for equipment and fault data
+- **Power Automate** for maintenance processing and notifications
+- **Microsoft Teams** for maintenance notifications
+- **Outlook** for email notifications
+
+The core data structure is:
 
 ```text
 Locations
-    |
-    v
+    ↓
 Equipment
-    |
-    v
+    ↓
 Faults
 ```
 
-The Power Apps application allows users to report and manage faults, including recording the location, equipment, fault category, description and operational impact.
+The **Equipment Fault Reporter** Power Apps application provides the structured reporting route and functionality for viewing and managing reported faults.
 
-Power Automate processes new faults, determines the assigned team and priority, updates the Fault record and sends notifications.
+A fault report captures:
 
-### Katie
+- Location
+- Equipment
+- Fault category
+- Description
+- Operational impact
 
-Katie provides a conversational route into the same process.
+Once a fault is created, the existing **Process New Equipment Fault** Power Automate flow processes it according to the defined maintenance rules, including priority, team assignment and notifications.
 
-Employees can describe a fault naturally. Katie collects the required information, clarifies anything missing or ambiguous, presents the proposed report and requires explicit confirmation before submission.
+## Katie Extension
 
-Katie can also answer questions about the existing maintenance process, including reporting, priority, assigned teams, statuses and what happens after submission.
+Katie was added to explore how conversational AI could provide another way of interacting with the same business process.
 
-Katie does not determine criticality, priority or assigned team, diagnose equipment faults or recommend repairs. Those responsibilities remain outside the conversational layer.
+Rather than replacing the existing application, Katie provides an alternative conversational route.
 
-## How Katie fits into the system
+An employee can describe an equipment problem in natural language. Katie collects the required fault information, clarifies missing or ambiguous information, presents the proposed report and requires explicit confirmation before submission.
 
-The integration follows a simple principle:
+Katie can also provide information about the existing maintenance process.
 
-> **Katie understands and collects the information. The existing system remains responsible for recording and processing the fault.**
+For the Katie route, the confirmed fault information is passed to the **Submit Confirmed Equipment Fault** Agent Flow, which creates the Fault record in the existing SharePoint system.
 
-```text
-Employee
-   ↓
-Katie
-   ↓
-Natural-language fault report
-   ↓
-Clarification and structured information
-   ↓
-Employee confirmation
-   ↓
-Submit Confirmed Equipment Fault
-   ↓
-SharePoint Faults list
-   ↓
-Existing maintenance process
-```
+The existing solution remains responsible for the underlying data structure and downstream maintenance process.
 
-The employee can therefore use either:
+Katie's role is deliberately limited. It does not diagnose faults, recommend repairs or take over the existing maintenance decisions around priority, criticality or team assignment.
 
-- Katie
-- The original Equipment Fault Reporter Power Apps application
+## Testing and Current Status
 
-The confirmed conversational submission uses a native Copilot Studio Agent Flow.
+The original solution is at working MVP stage.
 
-The Agent Flow resolves the relevant **Location and Equipment records** and creates the Fault. The existing **Process New Equipment Fault** Power Automate flow remains responsible for the downstream maintenance processing.
+The core Katie conversational experience and confirmed submission path have been configured and tested. Wider integration scenarios, downstream processing and full end-to-end regression testing remain outstanding.
 
-A successful Fault creation does not by itself mean that all downstream maintenance processing has completed.
+The detailed testing results, evidence and current project status are documented separately.
 
-## Current Status
+## What This Project Demonstrates
 
-The original system is at working MVP stage, with one known Title issue still under investigation. The core Katie conversational experience has also been configured and tested, with the confirmed submission path connected to SharePoint.
+This project demonstrates my approach to taking a business problem through analysis, solution design, implementation and testing.
 
-### Implemented and tested
+It covers:
 
-| Area | Status |
-|---|---|
-| Katie Copilot agent | **Implemented / Tested** |
-| Natural-language fault reporting | **Implemented / Tested** |
-| Five-field collection | **Implemented / Tested** |
-| Clarification and missing information | **Implemented / Tested** |
-| Configured reporting values | **Implemented / Tested** |
-| Confirmation before submission | **Implemented / Tested** |
-| Change after confirmation | **Implemented / Tested** |
-| Maintenance support | **Implemented / Tested** |
-| Submit Confirmed Equipment Fault Agent Flow → SharePoint Fault creation | **Implemented / Tested** |
+- Business process analysis
+- Requirements and business rules
+- Data modelling
+- Power Platform solution design
+- Workflow automation
+- Application design
+- Conversational AI
+- Integration between components
+- Testing and evidence
+- Documenting implementation decisions and limitations
 
-The current MVP uses a deliberately simple Agent Flow. Katie performs the conversational checking of configured locations, equipment and relationships, while the flow resolves the corresponding SharePoint records and creates the Fault.
-
-### Not yet completed
-
-The wider design and test plan includes additional scenarios that I have not yet marked as implemented or tested:
-
-- Full runtime validation within the Agent Flow.
-- Duplicate protection.
-- Failure and retry handling.
-- Verification of the existing downstream maintenance flow.
-- Verification of priority and assigned-team processing after an AI-created Fault.
-- Verification of email and Teams notifications.
-- Full end-to-end regression testing.
-
-These scenarios are part of the wider test plan, but I have not yet tested them.
+The project also demonstrates how an existing business solution can be extended with a new technology while keeping the original process and responsibilities intact.
 
 ## Project Documentation
 
-### Original System
+### Equipment Fault & Maintenance Management System
 
-- [01 — Business Problem](01-business-problem.md)
-- [02 — Solution Overview](02-solution-overview.md)
-- [03 — Power Apps](03-power-apps.md)
-- [04 — Power Automate](04-power-automate.md)
-- [05 — Testing and Lessons Learned](05-testing-and-lessons-learned.md)
-- [06 — Project Status](06-project-status.md)
-- [07 — Evidence Index](07_evidence.md)
+- [01 — Business Problem](01.%20Equipment%20Fault%20%26%20Maintenance%20Management%20System/01-business-problem.md)
+- [02 — Solution Overview](01.%20Equipment%20Fault%20%26%20Maintenance%20Management%20System/02-solution-overview.md)
+- [03 — Power Apps](01.%20Equipment%20Fault%20%26%20Maintenance%20Management%20System/03-power-apps.md)
+- [04 — Power Automate](01.%20Equipment%20Fault%20%26%20Maintenance%20Management%20System/04-power-automate.md)
+- [05 — Testing and Lessons Learned](01.%20Equipment%20Fault%20%26%20Maintenance%20Management%20System/05-testing-and-lessons-learned.md)
+- [06 — Project Status](01.%20Equipment%20Fault%20%26%20Maintenance%20Management%20System/06-project-status.md)
+- [07 — Evidence](01.%20Equipment%20Fault%20%26%20Maintenance%20Management%20System/07_evidence.md)
 
-### Katie Extension
+### Katie — Conversational Extension
 
-- [08 — Conversational Fault Reporting](08-conversational-fault-reporting.md)
-- [09 — Katie Copilot Agent](09-katie-copilot-agent.md)
-- [10 — Katie System Integration](10-katie-system-integration.md)
-- [11 — Katie Testing and Lessons Learned](11-katie-testing-and-lessons-learned.md)
-- [12 — Katie Project Status](12-katie-project-status.md)
+- [08 — Conversational Fault Reporting](02.%20Conversational%20Equipment%20Fault%20Reporting%20%26%20Maintenance%20Support/08-conversational-fault-reporting.md)
+- [09 — Katie Copilot Agent](02.%20Conversational%20Equipment%20Fault%20Reporting%20%26%20Maintenance%20Support/09-katie-copilot-agent.md)
+- [10 — Katie System Integration](02.%20Conversational%20Equipment%20Fault%20Reporting%20%26%20Maintenance%20Support/10-katie-system-integration.md)
+- [11 — Katie Testing and Lessons Learned](02.%20Conversational%20Equipment%20Fault%20Reporting%20%26%20Maintenance%20Support/11-katie-testing-and-lessons-learned.md)
+- [12 — Katie Project Status](02.%20Conversational%20Equipment%20Fault%20Reporting%20%26%20Maintenance%20Support/12-katie-project-status.md)
 
-## Screenshots
+## Repository Structure
 
-The `images` folder contains screenshots from the current implementation.
+```text
+Equipment-Fault-Maintenance-MVP/
+│
+├── 01. Equipment Fault & Maintenance Management System/
+│   ├── Images/
+│   ├── 01-business-problem.md
+│   ├── 02-solution-overview.md
+│   ├── 03-power-apps.md
+│   ├── 04-power-automate.md
+│   ├── 05-testing-and-lessons-learned.md
+│   ├── 06-project-status.md
+│   └── 07_evidence.md
+│
+├── 02. Conversational Equipment Fault Reporting & Maintenance Support/
+│   ├── Images/
+│   ├── 08-conversational-fault-reporting.md
+│   ├── 09-katie-copilot-agent.md
+│   ├── 10-katie-system-integration.md
+│   ├── 11-katie-testing-and-lessons-learned.md
+│   └── 12-katie-project-status.md
+│
+├── README.md
+└── ROADMAP.md
+```
 
-### Home
-
-![Home screen](01.%20Equipment%20Fault%20%26%20Maintenance%20Management%20System/Images/03-home.png)
-
-### Report a Fault
-
-![Report a Fault screen](01.%20Equipment%20Fault%20%26%20Maintenance%20Management%20System/Images/04-report-fault.png)
-
-### Faults
-
-![Faults screen](01.%20Equipment%20Fault%20%26%20Maintenance%20Management%20System/Images/06-faults-list.png)
-
-### Fault Detail
-
-![Fault Detail screen](01.%20Equipment%20Fault%20%26%20Maintenance%20Management%20System/Images/07-fault-detail.png)
-
-## Project Roadmap
-
-This project is evolving as a practical Technical Business Analyst learning portfolio.
-
-| Stage | Focus | Outcome |
-|---|---|---|
-| **1. Project 1** | Power Platform + Microsoft 365 | Equipment Fault Maintenance MVP |
-| **2. APIs & Integration** | REST APIs, JSON, HTTP, authentication | Practical API integration |
-| **3. Data & SQL** | Relational data, SQL, data quality | Operational data analysis |
-| **4. Cloud & Architecture** | Azure/AWS, architecture, security, scalability | Technical architecture and options assessment |
-| **5. AI & Automation** | GenAI, AI APIs, workflows, evaluation | AI Operations Assistant prototype |
-| **6. Technical BA Delivery** | Technical requirements, NFRs, integrations, data flows, testing | Technical BA requirements/design pack |
-| **7. Capstone** | Bringing the capabilities together | End-to-end Technical BA case study and portfolio |
-| **Candidate Extension** | Predictive maintenance | Explore predictive analytics using equipment and fault data |
-
-The wider direction is:
-
-**Power Platform → APIs & Integration → Data & SQL → Cloud & Architecture → AI & Automation → Technical BA Capstone**
-
-Katie is part of the project's AI & Automation development.
-
-## About the Project
-
-I built this as a self-directed project using a fictional multi-site food-service organisation and synthetic data.
-
-Through the project, I have developed practical experience of taking a business process, designing a solution and building it across Microsoft technologies. I then extended the solution with a conversational interface, keeping the existing data model, business rules and maintenance process in place.
+**[Project Roadmap](ROADMAP.md)**
