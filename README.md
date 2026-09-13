@@ -166,19 +166,19 @@ The `images` folder contains screenshots from the current implementation.
 
 ### Home
 
-![Home screen](images/03-home.png)
+![Home screen](01.%20Equipment%20Fault%20%26%20Maintenance%20Management%20System/Images/03-home.png)
 
 ### Report a Fault
 
-![Report a Fault screen](images/04-report-fault.png)
+![Report a Fault screen](01.%20Equipment%20Fault%20%26%20Maintenance%20Management%20System/Images/04-report-fault.png)
 
 ### Faults
 
-![Faults screen](images/06-faults-list.png)
+![Faults screen](01.%20Equipment%20Fault%20%26%20Maintenance%20Management%20System/Images/06-faults-list.png)
 
 ### Fault Detail
 
-![Fault Detail screen](images/07-fault-detail.png)
+![Fault Detail screen](01.%20Equipment%20Fault%20%26%20Maintenance%20Management%20System/Images/07-fault-detail.png)
 
 ## Project Roadmap
 
