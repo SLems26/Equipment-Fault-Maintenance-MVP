@@ -99,7 +99,7 @@ When a fault is marked as **Resolved**, resolution notes are required before the
 
 *Evidence E07 — fault detail, priority, assigned team, status and resolution fields.*
 
-## Navigation
+## Application Navigation
 
 ![Home screen](images/03-home.png)
 

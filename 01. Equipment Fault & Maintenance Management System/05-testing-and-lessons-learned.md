@@ -138,4 +138,4 @@ I also learned that business rules need to be tested with different combinations
 
 ## Current testing position
 
-The main Power Apps functionality, automation rules, SharePoint updates and notification routes have been tested. I have also completed an end-to-end test of the main fault-reporting process. The remaining testing work is focused on investigating the intermittent Title-as-ID issue and completing the final UI refinements.
+The main Power Apps functionality, automation rules, SharePoint updates and notification routes have been tested. I have also completed an end-to-end test of the original Power Apps fault-reporting process. The remaining testing work is focused on investigating the intermittent Title-as-ID issue and completing the final UI refinements.
